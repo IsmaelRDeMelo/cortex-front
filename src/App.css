@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* App Layout */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 24px;
+}
+
+/* Header */
+.app-header {
+    background-color: #001529; /* Azul Petróleo/Navy */
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #002140;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo-icon {
+    font-size: 28px;
+    margin-right: 12px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-menu {
+    border-bottom: none;
+}
+
+.main-menu .ant-menu-item a {
+    color: white;
+    font-size: 16px;
+}
+
+.main-menu .ant-menu-item-selected {
+    background-color: #1890ff !important;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+/* Cards */
+.ant-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ant-card-head {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Buttons */
+.ant-btn-primary {
+    background-color: #007B8A; /* Verde-azulado/Ciano */
+    border-color: #007B8A;
+}
+
+.ant-btn-primary:hover {
+    background-color: #005f6b;
+    border-color: #005f6b;
+}
+
+/* Tables */
+.ant-table-thead > tr > th {
+    background-color: #fafafa;
+    font-weight: 600;
+}
+
+/* Forms */
+.ant-form-item-label > label {
+    font-weight: 500;
+}
+
+/* Last Execution Info Box */
+.last-execution-info {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    border: 1px solid #e8e8e8;
+}
+
+.last-execution-info .ant-descriptions-title {
+    color: #001529;
+}
+
+.last-execution-info .ant-descriptions-item-label {
+    font-weight: bold;
+}
