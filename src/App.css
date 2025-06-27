@@ -7,55 +7,56 @@ body {
 }
 
 /* App Layout */
-.App {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.main-content {
-    flex: 1;
-    padding: 24px;
+.site-layout .site-layout-background {
+    background: #fff;
 }
 
 /* Header */
 .app-header {
-    background-color: #001529; /* Azul Petróleo/Navy */
+    background-color: #ffffff; /* White background */
     padding: 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #002140;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    color: white;
 }
 
 .logo-icon {
     font-size: 28px;
     margin-right: 12px;
+    color: #001529;
 }
 
 .logo-text {
     font-size: 24px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    color: #001529;
 }
 
-.main-menu {
-    border-bottom: none;
+.header-user-info {
+    display: flex;
+    align-items: center;
 }
 
-.main-menu .ant-menu-item a {
-    color: white;
-    font-size: 16px;
+.user-details {
+    margin-left: 12px;
+    line-height: 1.2;
 }
 
-.main-menu .ant-menu-item-selected {
-    background-color: #1890ff !important;
+.user-name {
+    font-weight: 500;
+    color: #333;
+}
+
+.user-email {
+    font-size: 12px;
+    color: #888;
 }
 
 /* Page Title */
@@ -68,7 +69,8 @@ body {
 /* Cards */
 .ant-card {
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border: none;
 }
 
 .ant-card-head {
@@ -76,42 +78,23 @@ body {
     font-weight: 500;
 }
 
-/* Buttons */
-.ant-btn-primary {
-    background-color: #007B8A; /* Verde-azulado/Ciano */
-    border-color: #007B8A;
-}
-
-.ant-btn-primary:hover {
-    background-color: #005f6b;
-    border-color: #005f6b;
-}
-
-/* Tables */
-.ant-table-thead > tr > th {
-    background-color: #fafafa;
-    font-weight: 600;
-}
-
-/* Forms */
-.ant-form-item-label > label {
-    font-weight: 500;
-}
-
 /* Last Execution Info Box */
-.last-execution-info {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 24px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
-    border: 1px solid #e8e8e8;
-}
-
 .last-execution-info .ant-descriptions-title {
     color: #001529;
 }
 
 .last-execution-info .ant-descriptions-item-label {
     font-weight: bold;
+}
+
+/* SQL Code Block in Modal */
+.sql-code {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 16px;
+    border-radius: 4px;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
 }

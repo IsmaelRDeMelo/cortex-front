@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
-import { HomeOutlined, HistoryOutlined, UserOutlined, GlobalOutlined } from '@ant-design/icons';
+import { HomeOutlined, HistoryOutlined, UserOutlined } from '@ant-design/icons';
 import HomePage from './pages/HomePage';
 import ExecutionHistoryPage from './pages/ExecutionHistoryPage';
 import CustomerSearchPage from './pages/CustomerSearchPage';
@@ -29,9 +29,9 @@ function App() {
             </Menu.Item>
           </Menu>
         </Sider>
-        <Layout>
+        <Layout className="site-layout">
           <AppHeader />
-          <Content style={{ margin: '24px 16px 0', padding: 24, background: '#fff', borderRadius: '8px' }}>
+          <Content style={{ margin: '24px 16px 0', padding: 24, background: '#f0f2f5' }}>
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/historico" element={<ExecutionHistoryPage />} />
